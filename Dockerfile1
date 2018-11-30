@@ -1,0 +1,4 @@
+from python:2
+copy . .
+run pip install mysql-connector
+CMD [ "python", "./Pythonfile1.py" ]

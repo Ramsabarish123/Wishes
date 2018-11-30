@@ -1,0 +1,14 @@
+version: '2'
+services:
+ mysql:
+  build: 
+   dockerfile: Dockerfile2
+   context: .
+ app:
+  build: 
+   dockerfile: Dockerfile1
+   context: .
+  depends_on:
+    - mysql
+  links:
+    - mysql
