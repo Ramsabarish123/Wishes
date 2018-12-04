@@ -70,7 +70,7 @@ encoders.encode_base64(part)
 part.add_header('Content-Disposition', "attachment; filename= %s" % filename) 
 msg.attach(part)
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-server.login(fromaddr, "Sudharani@123")
+server.login(fromaddr, "password")
 
 formatdate=str(today.day)+"/"+str(today.month)
 print(formatdate)
