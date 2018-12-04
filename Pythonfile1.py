@@ -69,7 +69,7 @@ msg.attach(part)
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 server.login(fromaddr, "Sudharani@123")
 
-formatdate=today.day+"/"+today.month
+formatdate=str(today.day)+"/"+str(today.month)
 print(formatdate)
 
 for x in myresult:
