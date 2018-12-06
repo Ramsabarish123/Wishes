@@ -11,7 +11,7 @@ mycursor.execute("CREATE DATABASE Birthday")
 mycursor.execute("CREATE TABLE Birthday.Employees (id INTEGER, name VARCHAR(255), gmail VARCHAR(255), birthdate VARCHAR(10))")
 
 sql = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
-val = ("1", "sabarish", "kramsabarish1234@gmail.com", "25/8")
+val = ("1", "sabarish", "kramsabarish1234@gmail.com", "6/12")
 mycursor.execute(sql, val)
 
 
@@ -70,7 +70,7 @@ encoders.encode_base64(part)
 part.add_header('Content-Disposition', "attachment; filename= %s" % filename) 
 msg.attach(part)
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-server.login(fromaddr, "password")
+server.login(fromaddr, "Sudharani@123")
 
 formatdate=str(today.day)+"/"+str(today.month)
 print(formatdate)
