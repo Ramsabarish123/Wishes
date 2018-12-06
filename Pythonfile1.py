@@ -11,24 +11,27 @@ mycursor.execute("CREATE DATABASE Birthday")
 mycursor.execute("CREATE TABLE Birthday.Employees (id INTEGER, name VARCHAR(255), gmail VARCHAR(255), birthdate VARCHAR(10))")
 
 sql = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
-val = ("1", "sabarish", "kramsabarish1234@gmail.com", "4/12")
+val = ("1", "sabarish", "kramsabarish1234@gmail.com", "6/12")
 mycursor.execute(sql, val)
 
-#sql1 = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
-#val1 = ("2", "ram", "kramsabarish1234@gmail.com", "2018-11-2")
-#mycursor.execute(sql1, val1)
+
 
 #sql2 = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
 #val2 = ("3", "Madhu", "vmadhu435@gmail.com", "2018-11-2")
 #mycursor.execute(sql2, val2)
 
 #sql3 = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
-#val3 = ("4", "Rohini", "rohini10waghmare@gmail.com", "2018-11-29")   #--10/01/1996
+#val3 = ("4", "Rohini", "rohini10waghmare@gmail.com", "10/1")   #--10/01/1996
 #mycursor.execute(sql3, val3)
 
 #sql4 = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
-#val4 = ("5", "Rohini", "vanaparthy1312@gmail.com", "2018-11-29")     #---17/06/1997
+#val4 = ("5", "Rohini", "vanaparthy1312@gmail.com", "17/6")     #---17/06/1997
 #mycursor.execute(sql4, val4)
+
+#sql4 = "INSERT INTO Birthday.Employees (id, name, gmail, birthdate) VALUES (%s, %s, %s, %s)"
+#val4 = ("5", "Rohini", "rangaashaaa@gmail.com", "6/11")     #---17/06/1997
+#mycursor.execute(sql4, val4)
+
 
 
 mydb.commit()
