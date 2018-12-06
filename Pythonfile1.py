@@ -54,7 +54,7 @@ body = random.choice(wishes_list)
 print(body)
 
 msg.attach(MIMEText(body, 'plain'))
-image_list = ['HappyBirthday.jpg', 'HappieBirthday.jpg', 'HapyBirthday.jpg', 'BirthdayWishes.jpg', 'BirthdayWish.jpg','Wishes.jpg','wish.jpg','happyWishes.jpg']
+image_list = ['HappyBirthday.jpg', 'HappieBirthday.jpg', 'HapyBirthday.jpg', 'BirthdayWishes.jpg', 'BirthdayWish.jpg','Wishes.jpg','wish.jpg','happyWishes.jpg',"wish1.jpg","wish2.jpg","wish3.jpg","wish4.jpg","wish5.jpg","wish6.jpg","wish7.jpg","wish8.jpg","wish10.jpg","wish11.jpg","wish12.jpg","wish13.jpg","wish14.jpg"]
 
 filename = random.choice(image_list)
 
